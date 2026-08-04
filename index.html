@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Student Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registrtion Form</h1>
+        
+        <form id="studentForm">
+            <div class="form-grid">
+
+                <div class="input-box">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="address">Address</label>
+                     <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                  <div class="input-box">
+                    <label for="pincode">Pincode</label>
+                    <input type="number" id="pincode" required>
+                </div>
+
+                <div class="input-box">
+                    <label >Gender</label>
+                    <div class="gender-box">
+                        <label >
+                            <input type="radio" name="gender" value="Male" required>
+                            Male
+                        </label>
+
+                        <label >
+                            <input type="radio" name="gender" value="Female" required>
+                            Female
+                        </label>                        
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="state"> State</label>
+                    <input type="text" id="state" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" required>
+                </div>
+
+            </div>
+                <div class="btn-container">
+                    <button type="submit">Submit</button>
+                </div>
+        </form>
+
+        <!--Below the form table-->
+
+        <h2>Student Details</h2>
+        <div class="table-container">
+    <table>
+
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+
+    </table>
+</div>
+    </div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

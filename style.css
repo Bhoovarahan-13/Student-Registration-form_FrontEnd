@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: #9cbefa ;
+    padding: 50px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(213, 220, 107, 0.864);
+}
+
+h1,h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+}
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input,textarea{
+    padding: 10px;
+    border: 1px solid rgb(165, 92, 92);
+    border-radius: 5px;
+    font-size: 14px;
+}
+.gender-box{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+button{
+    width: 180px;
+    padding: 15px;
+    border: none;
+    background: #ef52ec;
+    color: rgb(2, 2, 2);
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+button:hover{
+    background:#1d4ed8;
+}
+
+.table-container{
+    margin-top:30px;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+@media (max-width:768px){
+    .input-box{
+        flex:1 1 100%;
+    }
+}
+
+@media (max-width:480px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        padding:20px;
+    }
+
+    .gender-box{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    button{
+        width:50$;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+}
