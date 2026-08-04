@@ -40,14 +40,8 @@ Student-Registration-Form/
 ```
 
 ## How to Run
-
-1. Clone the repository.
-2. Open the project folder.
-3. Open `index.html` in your browser or use Live Server.
-
-## Screenshots
-
-(Add screenshots here if required.)
+1. Open the project folder.
+2. Open `index.html` in your browser or use Live Server.
 
 ## Author
 
